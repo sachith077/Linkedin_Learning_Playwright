@@ -2,7 +2,19 @@
   "name": "linkedin_learning_plawright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:chromium:headed": "npx playwright test --project=chromium --headed",
+    "test:headed:debug": "npx playwright test --headed --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:ui:headed": "npx playwright test --ui --headed",
+    "test:ui:headed:debug": "npx playwright test --ui --headed --debug",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright test && npx playwright show-report"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
